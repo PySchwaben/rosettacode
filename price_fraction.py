@@ -52,8 +52,7 @@ class PriceRescaler(object):
 
 
 if __name__ == '__main__':
-    table = __doc__.split("following table:")[-1].strip()
-    pt = PriceRescaler(table)
+    pt = PriceRescaler(__doc__.split("following table:")[-1].strip())
     for n in range(101):
         price = n / 100.0
         print("%.2f -> %.2f" % (price, pt.rescale(price)))
