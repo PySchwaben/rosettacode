@@ -52,7 +52,7 @@ class PriceRescaler(object):
 
 
 if __name__ == '__main__':
-    table = __doc__.split("table:")[-1].strip()
+    table = __doc__.split("following table:")[-1].strip()
     print(table)
     pt = PriceRescaler(table)
     for dec in range(101):
