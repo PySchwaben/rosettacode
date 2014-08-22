@@ -45,7 +45,6 @@ class PriceRescaler(object):
         return pairs
 
     def rescale(self, price):
-        assert 0 <= price <= 1, "rescales only between 0 and 1"
         for upperBound, result in self.upperBoundPriceTuples:
             if price < upperBound:
                 return result
