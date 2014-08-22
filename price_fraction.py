@@ -8,9 +8,7 @@ This value is regulated by a government department.
 
 Task: Given a floating point value between 0.00 and 1.00,
 rescale according to the following table:
-"""
 
-table = """\
 >=  0.00  <  0.06  :=  0.10
 >=  0.06  <  0.11  :=  0.18
 >=  0.11  <  0.16  :=  0.26
@@ -54,6 +52,8 @@ class PriceRescaler(object):
 
 
 if __name__ == '__main__':
+    table = __doc__.split("table:")[-1].strip()
+    print(table)
     pt = PriceRescaler(table)
     for dec in range(101):
         price = float(dec) / 100
