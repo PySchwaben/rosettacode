@@ -37,12 +37,12 @@ class PriceRescaler(object):
         self.upperBoundPriceTuples = self.transform(table)
 
     def transform(self, table):
-        upperBoundResultTuples = []
+        pairs = []
         for line in table.splitlines():
             interval, result = line.split(":=")
             upperBound = interval.split('<')[1]
-            upperBoundResultTuples.append((float(upperBound), float(result)))
-        return upperBoundResultTuples
+            pairs.append((float(upperBound), float(result)))
+        return pairs
 
     def rescale(self, price):
         assert 0 <= price < 1.01, "rescales only between 0 and 1"
