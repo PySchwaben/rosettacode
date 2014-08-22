@@ -1,4 +1,6 @@
 """
+http://rosettacode.org/wiki/Price_fraction
+
 A friend of mine runs a pharmacy.
 He has a specialised function in his Dispensary application which
 receives a decimal value of currency and replaces it to a standard value.
