@@ -55,6 +55,6 @@ if __name__ == '__main__':
     table = __doc__.split("following table:")[-1].strip()
     print(table)
     pt = PriceRescaler(table)
-    for dec in range(101):
-        price = float(dec) / 100
+    for n in range(101):
+        price = n / 100.0
         print("%.2f -> %.2f" % (price, pt.rescale(price)))
