@@ -1,6 +1,6 @@
 rosettacode
 ===========
 
-Unsere Implementationen von Tasks auf rosettacode.org
+our imlementations of tasks on rosettacode.org
 
-`Es gibt einige offene Tasks für Python <http://rosettacode.org/wiki/Reports:Tasks_not_implemented_in_Python>`_
+`There are a few open tasks on <http://rosettacode.org/wiki/Reports:Tasks_not_implemented_in_Python>`_
